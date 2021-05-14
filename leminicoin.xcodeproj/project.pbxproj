@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96664264EB55200DF3625 /* AppDelegate.swift */; };
+		A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96666264EB55200DF3625 /* SceneDelegate.swift */; };
+		A7A9666E264EB55300DF3625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666D264EB55300DF3625 /* Assets.xcassets */; };
+		A7A96671264EB55300DF3625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666F264EB55300DF3625 /* LaunchScreen.storyboard */; };
+		A7A9667C264EB55300DF3625 /* leminicoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9667B264EB55300DF3625 /* leminicoinTests.swift */; };
+		A7A96687264EB55300DF3625 /* leminicoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96686264EB55300DF3625 /* leminicoinUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7A96678264EB55300DF3625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A96659264EB55100DF3625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A96660264EB55200DF3625;
+			remoteInfo = leminicoin;
+		};
+		A7A96683264EB55300DF3625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A96659264EB55100DF3625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A96660264EB55200DF3625;
+			remoteInfo = leminicoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7A96661264EB55200DF3625 /* leminicoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leminicoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A96664264EB55200DF3625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7A96666264EB55200DF3625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7A9666D264EB55300DF3625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7A96670264EB55300DF3625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7A96672264EB55300DF3625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A96677264EB55300DF3625 /* leminicoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leminicoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A9667B264EB55300DF3625 /* leminicoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leminicoinTests.swift; sourceTree = "<group>"; };
+		A7A9667D264EB55300DF3625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A96682264EB55300DF3625 /* leminicoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leminicoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A96686264EB55300DF3625 /* leminicoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leminicoinUITests.swift; sourceTree = "<group>"; };
+		A7A96688264EB55300DF3625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7A9665E264EB55200DF3625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A96674264EB55300DF3625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A9667F264EB55300DF3625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7A96658264EB55100DF3625 = {
+			isa = PBXGroup;
+			children = (
+				A7A96663264EB55200DF3625 /* leminicoin */,
+				A7A9667A264EB55300DF3625 /* leminicoinTests */,
+				A7A96685264EB55300DF3625 /* leminicoinUITests */,
+				A7A96662264EB55200DF3625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7A96662264EB55200DF3625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7A96661264EB55200DF3625 /* leminicoin.app */,
+				A7A96677264EB55300DF3625 /* leminicoinTests.xctest */,
+				A7A96682264EB55300DF3625 /* leminicoinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7A96663264EB55200DF3625 /* leminicoin */ = {
+			isa = PBXGroup;
+			children = (
+				A7A96664264EB55200DF3625 /* AppDelegate.swift */,
+				A7A96666264EB55200DF3625 /* SceneDelegate.swift */,
+				A7A9666D264EB55300DF3625 /* Assets.xcassets */,
+				A7A9666F264EB55300DF3625 /* LaunchScreen.storyboard */,
+				A7A96672264EB55300DF3625 /* Info.plist */,
+			);
+			path = leminicoin;
+			sourceTree = "<group>";
+		};
+		A7A9667A264EB55300DF3625 /* leminicoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7A9667B264EB55300DF3625 /* leminicoinTests.swift */,
+				A7A9667D264EB55300DF3625 /* Info.plist */,
+			);
+			path = leminicoinTests;
+			sourceTree = "<group>";
+		};
+		A7A96685264EB55300DF3625 /* leminicoinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7A96686264EB55300DF3625 /* leminicoinUITests.swift */,
+				A7A96688264EB55300DF3625 /* Info.plist */,
+			);
+			path = leminicoinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7A96660264EB55200DF3625 /* leminicoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A9668B264EB55300DF3625 /* Build configuration list for PBXNativeTarget "leminicoin" */;
+			buildPhases = (
+				A7A9665D264EB55200DF3625 /* Sources */,
+				A7A9665E264EB55200DF3625 /* Frameworks */,
+				A7A9665F264EB55200DF3625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = leminicoin;
+			productName = leminicoin;
+			productReference = A7A96661264EB55200DF3625 /* leminicoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7A96676264EB55300DF3625 /* leminicoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A9668E264EB55300DF3625 /* Build configuration list for PBXNativeTarget "leminicoinTests" */;
+			buildPhases = (
+				A7A96673264EB55300DF3625 /* Sources */,
+				A7A96674264EB55300DF3625 /* Frameworks */,
+				A7A96675264EB55300DF3625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A96679264EB55300DF3625 /* PBXTargetDependency */,
+			);
+			name = leminicoinTests;
+			productName = leminicoinTests;
+			productReference = A7A96677264EB55300DF3625 /* leminicoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7A96681264EB55300DF3625 /* leminicoinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A96691264EB55300DF3625 /* Build configuration list for PBXNativeTarget "leminicoinUITests" */;
+			buildPhases = (
+				A7A9667E264EB55300DF3625 /* Sources */,
+				A7A9667F264EB55300DF3625 /* Frameworks */,
+				A7A96680264EB55300DF3625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A96684264EB55300DF3625 /* PBXTargetDependency */,
+			);
+			name = leminicoinUITests;
+			productName = leminicoinUITests;
+			productReference = A7A96682264EB55300DF3625 /* leminicoinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7A96659264EB55100DF3625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A7A96660264EB55200DF3625 = {
+						CreatedOnToolsVersion = 12.1.1;
+					};
+					A7A96676264EB55300DF3625 = {
+						CreatedOnToolsVersion = 12.1.1;
+						TestTargetID = A7A96660264EB55200DF3625;
+					};
+					A7A96681264EB55300DF3625 = {
+						CreatedOnToolsVersion = 12.1.1;
+						TestTargetID = A7A96660264EB55200DF3625;
+					};
+				};
+			};
+			buildConfigurationList = A7A9665C264EB55100DF3625 /* Build configuration list for PBXProject "leminicoin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7A96658264EB55100DF3625;
+			productRefGroup = A7A96662264EB55200DF3625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7A96660264EB55200DF3625 /* leminicoin */,
+				A7A96676264EB55300DF3625 /* leminicoinTests */,
+				A7A96681264EB55300DF3625 /* leminicoinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7A9665F264EB55200DF3625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A96671264EB55300DF3625 /* LaunchScreen.storyboard in Resources */,
+				A7A9666E264EB55300DF3625 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A96675264EB55300DF3625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A96680264EB55300DF3625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7A9665D264EB55200DF3625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */,
+				A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A96673264EB55300DF3625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A9667C264EB55300DF3625 /* leminicoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A9667E264EB55300DF3625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A96687264EB55300DF3625 /* leminicoinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7A96679264EB55300DF3625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A96660264EB55200DF3625 /* leminicoin */;
+			targetProxy = A7A96678264EB55300DF3625 /* PBXContainerItemProxy */;
+		};
+		A7A96684264EB55300DF3625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A96660264EB55200DF3625 /* leminicoin */;
+			targetProxy = A7A96683264EB55300DF3625 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7A9666F264EB55300DF3625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7A96670264EB55300DF3625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7A96689264EB55300DF3625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7A9668A264EB55300DF3625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7A9668C264EB55300DF3625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A355LH4T2C;
+				INFOPLIST_FILE = leminicoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7A9668D264EB55300DF3625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A355LH4T2C;
+				INFOPLIST_FILE = leminicoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7A9668F264EB55300DF3625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A355LH4T2C;
+				INFOPLIST_FILE = leminicoinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/leminicoin.app/leminicoin";
+			};
+			name = Debug;
+		};
+		A7A96690264EB55300DF3625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A355LH4T2C;
+				INFOPLIST_FILE = leminicoinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/leminicoin.app/leminicoin";
+			};
+			name = Release;
+		};
+		A7A96692264EB55300DF3625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A355LH4T2C;
+				INFOPLIST_FILE = leminicoinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = leminicoin;
+			};
+			name = Debug;
+		};
+		A7A96693264EB55300DF3625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A355LH4T2C;
+				INFOPLIST_FILE = leminicoinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = leminicoin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7A9665C264EB55100DF3625 /* Build configuration list for PBXProject "leminicoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A96689264EB55300DF3625 /* Debug */,
+				A7A9668A264EB55300DF3625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A9668B264EB55300DF3625 /* Build configuration list for PBXNativeTarget "leminicoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A9668C264EB55300DF3625 /* Debug */,
+				A7A9668D264EB55300DF3625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A9668E264EB55300DF3625 /* Build configuration list for PBXNativeTarget "leminicoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A9668F264EB55300DF3625 /* Debug */,
+				A7A96690264EB55300DF3625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A96691264EB55300DF3625 /* Build configuration list for PBXNativeTarget "leminicoinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A96692264EB55300DF3625 /* Debug */,
+				A7A96693264EB55300DF3625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7A96659264EB55100DF3625 /* Project object */;
+}
