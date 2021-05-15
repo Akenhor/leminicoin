@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "receipt_placeholder.pdf",
       "idiom" : "universal"
     }
   ],
