@@ -1,5 +1,5 @@
 //
-//  AdsDto.swift
+//  AdDto.swift
 //  leminicoin
 //
 //  Created by Pierre Semler on 14/05/2021.
