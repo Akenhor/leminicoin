@@ -11,7 +11,7 @@ protocol NetworkDependency {
     var networkService: NetworkService { get }
     func loadAds(completion: @escaping (Result<[AdDto], Error>) -> Void)
     func loadCategories(completion: @escaping (Result<[CategoryDto], Error>) -> Void)
-    func downloadAdImage(at url: URL, completion: @escaping (Result<Data?, Error>) -> Void)
+    func downloadAdImage(at url: URL?, completion: @escaping (Result<Data?, Error>) -> Void)
 }
 
 final class NetworkRepository: NetworkDependency {
@@ -34,7 +34,7 @@ final class NetworkRepository: NetworkDependency {
         networkService.request(urlRequest: URLRequest(url: components.url ?? emptyUrl), completion: completion)
     }
     
-    func downloadAdImage(at url: URL, completion: @escaping (Result<Data?, Error>) -> Void) {
-        networkService.download(urlRequest: URLRequest(url: url), completion: completion)
+    func downloadAdImage(at url: URL?, completion: @escaping (Result<Data?, Error>) -> Void) {
+        networkService.download(urlRequest: URLRequest(url: url ?? emptyUrl), completion: completion)
     }
 }

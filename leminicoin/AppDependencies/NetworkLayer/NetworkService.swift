@@ -19,6 +19,7 @@ final class NetworkService {
     private let session = URLSession(configuration: .default)
     private let queue = DispatchQueue(label: "NetworkService", qos: .userInitiated, attributes: .concurrent)
     private let components: URLComponents
+    private let cache = NSCache<NSString, NSData>()
     
     init(with components: URLComponents) {
         self.components = components
@@ -56,6 +57,7 @@ final class NetworkService {
     func request<T: Decodable>(urlRequest: URLRequest, completion: @escaping (Result<[T], Error>) -> Void) {
         queue.async { [weak self] in
             let task = self?.session.dataTask(with: urlRequest) { (data, response, error) in
+                
                 if let error = error {
                     completion(.failure(error))
                     return
@@ -84,8 +86,11 @@ final class NetworkService {
     
     func download(urlRequest: URLRequest, completion: @escaping (Result<Data?, Error>) -> Void) {
         queue.async { [weak self] in
+            if let url = urlRequest.url, let image = self?.cache.object(forKey: url.absoluteString as NSString) {
+                completion(.success(image as Data))
+            }
             
-            let task = self?.session.downloadTask(with: urlRequest) { (tmpUrl, response, error) in
+            let task = self?.session.downloadTask(with: urlRequest) { (localUrl, response, error) in
                 if let error = error {
                     completion(.failure(error))
                     return
@@ -96,13 +101,17 @@ final class NetworkService {
                     return
                 }
                 
-                guard let tmpUrl = tmpUrl else {
+                guard let localUrl = localUrl else {
                     completion(.failure(NetworkError.badLocalUrl))
                     return
                 }
                 
                 do {
-                    completion(.success(try Data(contentsOf: tmpUrl)))
+                    let data = try Data(contentsOf: localUrl)
+                    if let url = urlRequest.url {
+                        self?.cache.setObject(data as NSData, forKey: url.absoluteString as NSString)
+                    }
+                    completion(.success(data))
                 } catch let error {
                     completion(.failure(NetworkError.mappingError(error)))
                 }
