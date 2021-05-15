@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             var window: UIWindow?
             window = UIWindow(frame: UIScreen.main.bounds)
             
-            let adListViewController = AdListViewController()
+            let adListViewController = AdListViewController(nibName: nil, bundle: nil)
             let nvc = UINavigationController(rootViewController: adListViewController)
             nvc.navigationBar.barTintColor = .orange
             nvc.navigationBar.barStyle = .blackTranslucent
