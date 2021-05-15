@@ -13,6 +13,15 @@
 		A7A96671264EB55300DF3625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666F264EB55300DF3625 /* LaunchScreen.storyboard */; };
 		A7A9667C264EB55300DF3625 /* leminicoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9667B264EB55300DF3625 /* leminicoinTests.swift */; };
 		A7A96687264EB55300DF3625 /* leminicoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96686264EB55300DF3625 /* leminicoinUITests.swift */; };
+		A7A966B2264EB8EA00DF3625 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966B1264EB8EA00DF3625 /* NetworkService.swift */; };
+		A7A966B7264EBF3700DF3625 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966B6264EBF3700DF3625 /* NetworkRepository.swift */; };
+		A7A966BC264EC2EF00DF3625 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966BB264EC2EF00DF3625 /* AppDependencies.swift */; };
+		A7A966C2264ECD9800DF3625 /* AdListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966C1264ECD9800DF3625 /* AdListViewController.swift */; };
+		A7A966C8264ECE9700DF3625 /* AdDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966C7264ECE9700DF3625 /* AdDto.swift */; };
+		A7A966D0264ECEFB00DF3625 /* AdImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966CF264ECEFB00DF3625 /* AdImageDto.swift */; };
+		A7A966D5264ECF7200DF3625 /* CategoryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966D4264ECF7200DF3625 /* CategoryDto.swift */; };
+		A7A966DE264FD39100DF3625 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966DD264FD39100DF3625 /* AdCell.swift */; };
+		A7A966E72650059700DF3625 /* UIView + Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966E62650059700DF3625 /* UIView + Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		A7A96682264EB55300DF3625 /* leminicoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leminicoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A96686264EB55300DF3625 /* leminicoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leminicoinUITests.swift; sourceTree = "<group>"; };
 		A7A96688264EB55300DF3625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A966B1264EB8EA00DF3625 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A7A966B6264EBF3700DF3625 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		A7A966BB264EC2EF00DF3625 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		A7A966C1264ECD9800DF3625 /* AdListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListViewController.swift; sourceTree = "<group>"; };
+		A7A966C7264ECE9700DF3625 /* AdDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDto.swift; sourceTree = "<group>"; };
+		A7A966CF264ECEFB00DF3625 /* AdImageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdImageDto.swift; sourceTree = "<group>"; };
+		A7A966D4264ECF7200DF3625 /* CategoryDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDto.swift; sourceTree = "<group>"; };
+		A7A966DD264FD39100DF3625 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		A7A966E62650059700DF3625 /* UIView + Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +113,8 @@
 		A7A96663264EB55200DF3625 /* leminicoin */ = {
 			isa = PBXGroup;
 			children = (
+				A7A966C0264ECD8E00DF3625 /* Scenes */,
+				A7A966AF264EB8C800DF3625 /* AppDependencies */,
 				A7A96664264EB55200DF3625 /* AppDelegate.swift */,
 				A7A96666264EB55200DF3625 /* SceneDelegate.swift */,
 				A7A9666D264EB55300DF3625 /* Assets.xcassets */,
@@ -120,6 +140,53 @@
 				A7A96688264EB55300DF3625 /* Info.plist */,
 			);
 			path = leminicoinUITests;
+			sourceTree = "<group>";
+		};
+		A7A966AF264EB8C800DF3625 /* AppDependencies */ = {
+			isa = PBXGroup;
+			children = (
+				A7A966E52650057900DF3625 /* Extensions */,
+				A7A966B0264EB8D500DF3625 /* NetworkLayer */,
+				A7A966BB264EC2EF00DF3625 /* AppDependencies.swift */,
+			);
+			path = AppDependencies;
+			sourceTree = "<group>";
+		};
+		A7A966B0264EB8D500DF3625 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A7A966C6264ECE4D00DF3625 /* Dtos */,
+				A7A966B1264EB8EA00DF3625 /* NetworkService.swift */,
+				A7A966B6264EBF3700DF3625 /* NetworkRepository.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		A7A966C0264ECD8E00DF3625 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A7A966C1264ECD9800DF3625 /* AdListViewController.swift */,
+				A7A966DD264FD39100DF3625 /* AdCell.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A7A966C6264ECE4D00DF3625 /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				A7A966C7264ECE9700DF3625 /* AdDto.swift */,
+				A7A966CF264ECEFB00DF3625 /* AdImageDto.swift */,
+				A7A966D4264ECF7200DF3625 /* CategoryDto.swift */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		A7A966E52650057900DF3625 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7A966E62650059700DF3625 /* UIView + Constraints.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +318,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A966B7264EBF3700DF3625 /* NetworkRepository.swift in Sources */,
+				A7A966D5264ECF7200DF3625 /* CategoryDto.swift in Sources */,
+				A7A966C2264ECD9800DF3625 /* AdListViewController.swift in Sources */,
+				A7A966D0264ECEFB00DF3625 /* AdImageDto.swift in Sources */,
+				A7A966DE264FD39100DF3625 /* AdCell.swift in Sources */,
+				A7A966C8264ECE9700DF3625 /* AdDto.swift in Sources */,
 				A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */,
+				A7A966B2264EB8EA00DF3625 /* NetworkService.swift in Sources */,
+				A7A966BC264EC2EF00DF3625 /* AppDependencies.swift in Sources */,
+				A7A966E72650059700DF3625 /* UIView + Constraints.swift in Sources */,
 				A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        if let windowScene = scene as? UIWindowScene {
+            window = UIWindow(windowScene: windowScene)
+            
+            let adListViewController = AdListViewController()
+            let nvc = UINavigationController(rootViewController: adListViewController)
+            nvc.navigationBar.barTintColor = .orange
+            nvc.navigationBar.barStyle = .blackTranslucent
+            
+            window?.rootViewController = nvc
+            window?.makeKeyAndVisible()
+        }
     }
 }
 

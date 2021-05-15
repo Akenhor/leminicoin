@@ -10,9 +10,21 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        if #available(iOS 13.0, *) {} else {
+            var window: UIWindow?
+            window = UIWindow(frame: UIScreen.main.bounds)
+            
+            let adListViewController = AdListViewController()
+            let nvc = UINavigationController(rootViewController: adListViewController)
+            nvc.navigationBar.barTintColor = .orange
+            nvc.navigationBar.barStyle = .blackTranslucent
+            
+            window?.rootViewController = nvc
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
