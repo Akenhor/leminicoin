@@ -65,7 +65,7 @@ final class DateConverter: DateConverterHelper {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = dateType.timeZone
         dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = withTime ? .short : .none
+        dateFormatter.timeStyle = withTime ? .medium : .none
         
         return dateFormatter.string(from: date)
     }
