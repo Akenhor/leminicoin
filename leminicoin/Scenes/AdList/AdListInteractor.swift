@@ -25,7 +25,9 @@ extension AdListInteractor: AdListInteractorProtocol {
             case .success(let categories):
                 tmpCats = categories
             case .failure(let error):
-                print(error)
+                #if DEBUG
+                    print(error)
+                #endif
             }
             serviceGroup.leave()
         }
@@ -37,7 +39,9 @@ extension AdListInteractor: AdListInteractorProtocol {
             case .success(let ads):
                 tmpAds = ads
             case .failure(let error):
-                print(error)
+                #if DEBUG
+                    print(error)
+                #endif
             }
             serviceGroup.leave()
         }

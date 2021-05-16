@@ -13,8 +13,8 @@ final class AppDependencies {
     
     fileprivate(set) lazy var urlComponents: URLComponents = {
         var components = URLComponents()
-        components.scheme = "https"
-        components.host = "raw.githubusercontent.com"
+        components.scheme = ConfigurationManager.sharedInstance.server?.serverProtocol
+        components.host = ConfigurationManager.sharedInstance.server?.hostName
         return components
     }()
     

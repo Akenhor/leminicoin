@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7756E7C26511F5800BC4F82 /* ServicesServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756E7B26511F5800BC4F82 /* ServicesServerConfiguration.swift */; };
 		A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96664264EB55200DF3625 /* AppDelegate.swift */; };
 		A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96666264EB55200DF3625 /* SceneDelegate.swift */; };
 		A7A9666E264EB55300DF3625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666D264EB55300DF3625 /* Assets.xcassets */; };
@@ -32,6 +33,9 @@
 		A7A967212650579E00DF3625 /* PriceConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A967202650579E00DF3625 /* PriceConverter.swift */; };
 		A7A967272650735E00DF3625 /* KitUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A967262650735E00DF3625 /* KitUI.swift */; };
 		A7A9672F2650738B00DF3625 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9672E2650738B00DF3625 /* Loader.swift */; };
+		A7A967542651196200DF3625 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A967532651196200DF3625 /* Config.plist */; };
+		A7A9675926511A2400DF3625 /* ConfigRelease.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A9675826511A2400DF3625 /* ConfigRelease.plist */; };
+		A7A9675F26511AB200DF3625 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9675E26511AB200DF3625 /* ConfigurationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7756E7B26511F5800BC4F82 /* ServicesServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesServerConfiguration.swift; sourceTree = "<group>"; };
 		A7A96661264EB55200DF3625 /* leminicoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leminicoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A96664264EB55200DF3625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A96666264EB55200DF3625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +88,9 @@
 		A7A967202650579E00DF3625 /* PriceConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceConverter.swift; sourceTree = "<group>"; };
 		A7A967262650735E00DF3625 /* KitUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitUI.swift; sourceTree = "<group>"; };
 		A7A9672E2650738B00DF3625 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		A7A967532651196200DF3625 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		A7A9675826511A2400DF3625 /* ConfigRelease.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConfigRelease.plist; sourceTree = "<group>"; };
+		A7A9675E26511AB200DF3625 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,8 @@
 				A7A9666D264EB55300DF3625 /* Assets.xcassets */,
 				A7A9666F264EB55300DF3625 /* LaunchScreen.storyboard */,
 				A7A96672264EB55300DF3625 /* Info.plist */,
+				A7A967532651196200DF3625 /* Config.plist */,
+				A7A9675826511A2400DF3625 /* ConfigRelease.plist */,
 			);
 			path = leminicoin;
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 		A7A966AF264EB8C800DF3625 /* AppDependencies */ = {
 			isa = PBXGroup;
 			children = (
+				A7A9675D26511AA500DF3625 /* Configuration */,
 				A7A96725265072BA00DF3625 /* KitUI */,
 				A7A9671A265055CD00DF3625 /* Converters */,
 				A7A966E52650057900DF3625 /* Extensions */,
@@ -257,6 +268,15 @@
 				A7A9672E2650738B00DF3625 /* Loader.swift */,
 			);
 			path = KitUI;
+			sourceTree = "<group>";
+		};
+		A7A9675D26511AA500DF3625 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A7A9675E26511AB200DF3625 /* ConfigurationManager.swift */,
+				A7756E7B26511F5800BC4F82 /* ServicesServerConfiguration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +382,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A9675926511A2400DF3625 /* ConfigRelease.plist in Resources */,
 				A7A96671264EB55300DF3625 /* LaunchScreen.storyboard in Resources */,
+				A7A967542651196200DF3625 /* Config.plist in Resources */,
 				A7A9666E264EB55300DF3625 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,9 +424,11 @@
 				A7A9671626502B5000DF3625 /* AdListConfigurator.swift in Sources */,
 				A7A967212650579E00DF3625 /* PriceConverter.swift in Sources */,
 				A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */,
+				A7A9675F26511AB200DF3625 /* ConfigurationManager.swift in Sources */,
 				A7A966B2264EB8EA00DF3625 /* NetworkService.swift in Sources */,
 				A7A966BC264EC2EF00DF3625 /* AppDependencies.swift in Sources */,
 				A7A966E72650059700DF3625 /* UIView + Constraints.swift in Sources */,
+				A7756E7C26511F5800BC4F82 /* ServicesServerConfiguration.swift in Sources */,
 				A7A966F72650266600DF3625 /* AdListPresenter.swift in Sources */,
 				A7A9670C2650288400DF3625 /* CategoryModel.swift in Sources */,
 				A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */,
@@ -510,9 +534,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = DEBUG;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -564,9 +590,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = RELEASE;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -584,6 +612,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -598,14 +627,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A355LH4T2C;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = leminicoin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.technicaltest.leminicoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

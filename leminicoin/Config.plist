@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Config.plist
+   leminicoin
+
+   Created by Pierre Semler on 16/05/2021.
+   Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>server</key>
+    <dict>
+        <key>services</key>
+        <dict>
+            <key>protocol</key>
+            <string>https</string>
+            <key>host</key>
+            <string>raw.githubusercontent.com</string>
+        </dict>
+    </dict>
+</dict>
+</plist>
