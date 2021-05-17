@@ -29,8 +29,6 @@ final class NetworkService {
     func request<T: Decodable>(urlRequest: URLRequest, completion: @escaping (Result<T, Error>) -> Void) {
         queue.async { [weak self] in
             let task = self?.session.dataTask(with: urlRequest) { (data, response, error) in
-                completion(.failure(NetworkError.dataTaskError(error!)))
-                return
                 if let error = error {
                     completion(.failure(NetworkError.dataTaskError(error)))
                     return
