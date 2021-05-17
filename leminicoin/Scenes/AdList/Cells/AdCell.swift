@@ -10,6 +10,7 @@ import UIKit
 final class AdCell: UITableViewCell {
     
     static let reuseIdentifier: String = "\(AdCell.self)"
+    private let defaultPadding: CGFloat = 10
     
     var smallImage: UIImage? {
         didSet {
@@ -40,14 +41,14 @@ final class AdCell: UITableViewCell {
         }
     }
     
-    var isUrgent: Bool? {
+    var isUrgentImage: UIImage? {
         didSet {
-            urgentImageView.image = isUrgent ?? false ? #imageLiteral(resourceName: "AdIsUrgent") : nil
+            urgentImageView.image = isUrgentImage
         }
     }
     
-    private lazy var spinner: UIActivityIndicatorView = {
-        let spinner = UIActivityIndicatorView(style: .white)
+    fileprivate lazy var spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(style: .gray)
         spinner.hidesWhenStopped = true
         spinner.startAnimating()
         
@@ -66,7 +67,8 @@ final class AdCell: UITableViewCell {
         imageView.contentMode = .scaleAspectFit
         
         contentView.addSubview(imageView)
-        imageView.anchor(top: contentView.topAnchor, left: contentView.leftAnchor, right: nil, bottom: contentView.bottomAnchor, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, width: contentView.bounds.width/4)
+        imageView.anchor(top: nil, left: contentView.leftAnchor, right: nil, bottom: nil, paddingTop: defaultPadding, paddingLeft: defaultPadding, paddingBottom: defaultPadding, width: contentView.bounds.width/4, height: contentView.bounds.width/4)
+        imageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         return imageView
     }()
     
@@ -88,7 +90,7 @@ final class AdCell: UITableViewCell {
         label.textAlignment = .left
         
         contentView.addSubview(label)
-        label.anchor(top: contentView.topAnchor, left: smallImageView.rightAnchor, right: urgentImageView.leftAnchor, bottom: nil, paddingTop: 10, paddingLeft: 10, paddingRight: 10)
+        label.anchor(top: contentView.topAnchor, left: smallImageView.rightAnchor, right: urgentImageView.leftAnchor, bottom: nil, paddingTop: defaultPadding, paddingLeft: defaultPadding, paddingRight: defaultPadding)
         return label
     }()
     
@@ -100,7 +102,7 @@ final class AdCell: UITableViewCell {
         label.textAlignment = .left
         
         contentView.addSubview(label)
-        label.anchor(top: categoryLabel.bottomAnchor, left: categoryLabel.leftAnchor, right: nil, bottom: contentView.bottomAnchor, paddingTop: 10, paddingBottom: 10, width: 2 * contentView.bounds.width / 3)
+        label.anchor(top: categoryLabel.bottomAnchor, left: categoryLabel.leftAnchor, right: nil, bottom: contentView.bottomAnchor, paddingTop: defaultPadding, paddingBottom: defaultPadding, width: 2 * contentView.bounds.width / 3)
         
         return label
     }()
@@ -112,7 +114,7 @@ final class AdCell: UITableViewCell {
         label.textAlignment = .right
         
         contentView.addSubview(label)
-        label.anchor(top: nameLabel.topAnchor, left: nameLabel.rightAnchor, right: contentView.rightAnchor, bottom: nameLabel.bottomAnchor, paddingTop: 10, paddingLeft: 10, paddingRight: 10, paddingBottom: 10)
+        label.anchor(top: nameLabel.topAnchor, left: nameLabel.rightAnchor, right: contentView.rightAnchor, bottom: nameLabel.bottomAnchor, paddingTop: defaultPadding, paddingLeft: defaultPadding, paddingRight: defaultPadding, paddingBottom: defaultPadding)
         return label
     }()
     

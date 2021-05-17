@@ -35,7 +35,7 @@ public enum L10n {
         }
         
         public enum SearchBar {
-            public static let placeholder = L10n.getLocalizedString(table: "Localizable", key: "adList.serchBar.placeholder")
+            public static let placeholder = L10n.getLocalizedString(table: "Localizable", key: "adList.searchBar.placeholder")
         }
     }
     

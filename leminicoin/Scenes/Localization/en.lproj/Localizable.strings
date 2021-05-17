@@ -14,7 +14,6 @@
 "adList.searchBar.placeholder"="What do you look for?";
 
 "error.generic.title"="Wooops";
-
 "error.dataTask.message"="Something bad happened: verify your network and try to refresh the app.";
 "error.badResponse.message"="Something bad happened: server returned error.";
 "error.noData.message"="Something bad happened: no data received.";

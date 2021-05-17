@@ -10,6 +10,8 @@ import UIKit
 enum AdListConfigurator {
     
     static func configure(viewController: AdListViewController) {
+        let router = AdListRouter()
+        router.viewController = viewController
         
         let presenter = AdListPresenter()
         presenter.output = viewController
@@ -18,5 +20,6 @@ enum AdListConfigurator {
         interactor.output = presenter
         
         viewController.output = interactor
+        viewController.router = router
     }
 }

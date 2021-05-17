@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A7756E7C26511F5800BC4F82 /* ServicesServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756E7B26511F5800BC4F82 /* ServicesServerConfiguration.swift */; };
+		A7756E8E2651245F00BC4F82 /* AdDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756E8D2651245F00BC4F82 /* AdDetailConfigurator.swift */; };
+		A7756E962651246B00BC4F82 /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756E952651246B00BC4F82 /* AdDetailViewController.swift */; };
+		A7756E9B2651247800BC4F82 /* AdDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756E9A2651247800BC4F82 /* AdDetailInteractor.swift */; };
+		A7756EA12651249500BC4F82 /* AdDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EA02651249500BC4F82 /* AdDetailPresenter.swift */; };
+		A7756EA6265124A000BC4F82 /* AdDetailVIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EA5265124A000BC4F82 /* AdDetailVIP.swift */; };
+		A7756EAB265131AD00BC4F82 /* AdListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EAA265131AD00BC4F82 /* AdListRouter.swift */; };
+		A7756EB4265158FA00BC4F82 /* AdDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EB3265158FA00BC4F82 /* AdDetailModel.swift */; };
+		A7756EBC2651CAFE00BC4F82 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EBB2651CAFE00BC4F82 /* CategoryCell.swift */; };
+		A7756EC42652732F00BC4F82 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EC32652732F00BC4F82 /* AppColor.swift */; };
+		A7756ED826528D6F00BC4F82 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7756EDA26528D6F00BC4F82 /* Localizable.strings */; };
+		A7756EE3265290D000BC4F82 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EE2265290D000BC4F82 /* L10n.swift */; };
 		A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96664264EB55200DF3625 /* AppDelegate.swift */; };
 		A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96666264EB55200DF3625 /* SceneDelegate.swift */; };
 		A7A9666E264EB55300DF3625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666D264EB55300DF3625 /* Assets.xcassets */; };
@@ -26,7 +37,7 @@
 		A7A966F22650265900DF3625 /* AdListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966F12650265900DF3625 /* AdListInteractor.swift */; };
 		A7A966F72650266600DF3625 /* AdListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966F62650266600DF3625 /* AdListPresenter.swift */; };
 		A7A96700265027E400DF3625 /* AdListVIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966FF265027E400DF3625 /* AdListVIP.swift */; };
-		A7A967072650283D00DF3625 /* AdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A967062650283D00DF3625 /* AdModel.swift */; };
+		A7A967072650283D00DF3625 /* AdListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A967062650283D00DF3625 /* AdListModel.swift */; };
 		A7A9670C2650288400DF3625 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9670B2650288400DF3625 /* CategoryModel.swift */; };
 		A7A9671626502B5000DF3625 /* AdListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9671526502B5000DF3625 /* AdListConfigurator.swift */; };
 		A7A9671C265055DB00DF3625 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9671B265055DB00DF3625 /* DateConverter.swift */; };
@@ -57,6 +68,18 @@
 
 /* Begin PBXFileReference section */
 		A7756E7B26511F5800BC4F82 /* ServicesServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesServerConfiguration.swift; sourceTree = "<group>"; };
+		A7756E8D2651245F00BC4F82 /* AdDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailConfigurator.swift; sourceTree = "<group>"; };
+		A7756E952651246B00BC4F82 /* AdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
+		A7756E9A2651247800BC4F82 /* AdDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailInteractor.swift; sourceTree = "<group>"; };
+		A7756EA02651249500BC4F82 /* AdDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailPresenter.swift; sourceTree = "<group>"; };
+		A7756EA5265124A000BC4F82 /* AdDetailVIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailVIP.swift; sourceTree = "<group>"; };
+		A7756EAA265131AD00BC4F82 /* AdListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListRouter.swift; sourceTree = "<group>"; };
+		A7756EB3265158FA00BC4F82 /* AdDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailModel.swift; sourceTree = "<group>"; };
+		A7756EBB2651CAFE00BC4F82 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		A7756EC32652732F00BC4F82 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		A7756ED926528D6F00BC4F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A7756EDE26528D8100BC4F82 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A7756EE2265290D000BC4F82 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		A7A96661264EB55200DF3625 /* leminicoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leminicoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A96664264EB55200DF3625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A96666264EB55200DF3625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +104,7 @@
 		A7A966F12650265900DF3625 /* AdListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListInteractor.swift; sourceTree = "<group>"; };
 		A7A966F62650266600DF3625 /* AdListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListPresenter.swift; sourceTree = "<group>"; };
 		A7A966FF265027E400DF3625 /* AdListVIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListVIP.swift; sourceTree = "<group>"; };
-		A7A967062650283D00DF3625 /* AdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdModel.swift; sourceTree = "<group>"; };
+		A7A967062650283D00DF3625 /* AdListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListModel.swift; sourceTree = "<group>"; };
 		A7A9670B2650288400DF3625 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		A7A9671526502B5000DF3625 /* AdListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListConfigurator.swift; sourceTree = "<group>"; };
 		A7A9671B265055DB00DF3625 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
@@ -118,6 +141,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7756E8C2651244B00BC4F82 /* AdDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A7756EB2265158E900BC4F82 /* Models */,
+				A7756E8D2651245F00BC4F82 /* AdDetailConfigurator.swift */,
+				A7756E952651246B00BC4F82 /* AdDetailViewController.swift */,
+				A7756E9A2651247800BC4F82 /* AdDetailInteractor.swift */,
+				A7756EA02651249500BC4F82 /* AdDetailPresenter.swift */,
+				A7756EA5265124A000BC4F82 /* AdDetailVIP.swift */,
+			);
+			path = AdDetail;
+			sourceTree = "<group>";
+		};
+		A7756EB2265158E900BC4F82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7756EB3265158FA00BC4F82 /* AdDetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7756EC826528A2A00BC4F82 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A7756EDA26528D6F00BC4F82 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		A7756EE7265290D700BC4F82 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A7756EE2265290D000BC4F82 /* L10n.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		A7A96658264EB55100DF3625 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +235,7 @@
 		A7A966AF264EB8C800DF3625 /* AppDependencies */ = {
 			isa = PBXGroup;
 			children = (
+				A7756EE7265290D700BC4F82 /* Localization */,
 				A7A9675D26511AA500DF3625 /* Configuration */,
 				A7A96725265072BA00DF3625 /* KitUI */,
 				A7A9671A265055CD00DF3625 /* Converters */,
@@ -198,6 +259,8 @@
 		A7A966C0264ECD8E00DF3625 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A7756EC826528A2A00BC4F82 /* Localization */,
+				A7756E8C2651244B00BC4F82 /* AdDetail */,
 				A7A966FB265027B600DF3625 /* AdList */,
 			);
 			path = Scenes;
@@ -231,6 +294,7 @@
 				A7A966C1264ECD9800DF3625 /* AdListViewController.swift */,
 				A7A966FF265027E400DF3625 /* AdListVIP.swift */,
 				A7A9671526502B5000DF3625 /* AdListConfigurator.swift */,
+				A7756EAA265131AD00BC4F82 /* AdListRouter.swift */,
 			);
 			path = AdList;
 			sourceTree = "<group>";
@@ -238,7 +302,7 @@
 		A7A967042650282C00DF3625 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A7A967062650283D00DF3625 /* AdModel.swift */,
+				A7A967062650283D00DF3625 /* AdListModel.swift */,
 				A7A9670B2650288400DF3625 /* CategoryModel.swift */,
 			);
 			path = Models;
@@ -248,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				A7A966DD264FD39100DF3625 /* AdCell.swift */,
+				A7756EBB2651CAFE00BC4F82 /* CategoryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -266,6 +331,7 @@
 			children = (
 				A7A967262650735E00DF3625 /* KitUI.swift */,
 				A7A9672E2650738B00DF3625 /* Loader.swift */,
+				A7756EC32652732F00BC4F82 /* AppColor.swift */,
 			);
 			path = KitUI;
 			sourceTree = "<group>";
@@ -364,6 +430,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = A7A96658264EB55100DF3625;
 			productRefGroup = A7A96662264EB55200DF3625 /* Products */;
@@ -382,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7756ED826528D6F00BC4F82 /* Localizable.strings in Resources */,
 				A7A9675926511A2400DF3625 /* ConfigRelease.plist in Resources */,
 				A7A96671264EB55300DF3625 /* LaunchScreen.storyboard in Resources */,
 				A7A967542651196200DF3625 /* Config.plist in Resources */,
@@ -410,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7756E962651246B00BC4F82 /* AdDetailViewController.swift in Sources */,
 				A7A966B7264EBF3700DF3625 /* NetworkRepository.swift in Sources */,
 				A7A966D5264ECF7200DF3625 /* CategoryDto.swift in Sources */,
 				A7A9671C265055DB00DF3625 /* DateConverter.swift in Sources */,
@@ -418,21 +487,30 @@
 				A7A9672F2650738B00DF3625 /* Loader.swift in Sources */,
 				A7A966D0264ECEFB00DF3625 /* AdImageDto.swift in Sources */,
 				A7A96700265027E400DF3625 /* AdListVIP.swift in Sources */,
+				A7756EC42652732F00BC4F82 /* AppColor.swift in Sources */,
 				A7A966DE264FD39100DF3625 /* AdCell.swift in Sources */,
 				A7A966F22650265900DF3625 /* AdListInteractor.swift in Sources */,
+				A7756EA12651249500BC4F82 /* AdDetailPresenter.swift in Sources */,
 				A7A966C8264ECE9700DF3625 /* AdDto.swift in Sources */,
 				A7A9671626502B5000DF3625 /* AdListConfigurator.swift in Sources */,
 				A7A967212650579E00DF3625 /* PriceConverter.swift in Sources */,
 				A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */,
 				A7A9675F26511AB200DF3625 /* ConfigurationManager.swift in Sources */,
+				A7756EBC2651CAFE00BC4F82 /* CategoryCell.swift in Sources */,
 				A7A966B2264EB8EA00DF3625 /* NetworkService.swift in Sources */,
+				A7756EE3265290D000BC4F82 /* L10n.swift in Sources */,
+				A7756E8E2651245F00BC4F82 /* AdDetailConfigurator.swift in Sources */,
 				A7A966BC264EC2EF00DF3625 /* AppDependencies.swift in Sources */,
 				A7A966E72650059700DF3625 /* UIView + Constraints.swift in Sources */,
+				A7756EAB265131AD00BC4F82 /* AdListRouter.swift in Sources */,
+				A7756E9B2651247800BC4F82 /* AdDetailInteractor.swift in Sources */,
 				A7756E7C26511F5800BC4F82 /* ServicesServerConfiguration.swift in Sources */,
 				A7A966F72650266600DF3625 /* AdListPresenter.swift in Sources */,
+				A7756EB4265158FA00BC4F82 /* AdDetailModel.swift in Sources */,
 				A7A9670C2650288400DF3625 /* CategoryModel.swift in Sources */,
 				A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */,
-				A7A967072650283D00DF3625 /* AdModel.swift in Sources */,
+				A7A967072650283D00DF3625 /* AdListModel.swift in Sources */,
+				A7756EA6265124A000BC4F82 /* AdDetailVIP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +546,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A7756EDA26528D6F00BC4F82 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7756ED926528D6F00BC4F82 /* en */,
+				A7756EDE26528D8100BC4F82 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A7A9666F264EB55300DF3625 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -483,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -546,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

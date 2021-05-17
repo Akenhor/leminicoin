@@ -9,47 +9,89 @@ import Foundation
 
 final class AdListInteractor {
     var output: AdListPresenterProtocol!
+    var ads: [AdDto] = []
+    var categories: [CategoryDto] = []
+    var filters: [Int] = []
+    var searchFilter: String = ""
+    
+    private func sortByUrgenceAndDate(ads: [AdDto]) -> [AdDto] {
+        return ads.sorted { (lhs, rhs) -> Bool in
+            guard let lhsIsUrgent = lhs.is_urgent, let rhsIsUrgent = rhs.is_urgent, let lhsCreationDate = lhs.creation_date, let rhsCreationDate = rhs.creation_date, let lhsDate = DateConverter.date(from: lhsCreationDate, dateType: .iso8601), let rhsDate = DateConverter.date(from: rhsCreationDate, dateType: .iso8601) else {
+                return false
+            }
+            if (lhsIsUrgent != rhsIsUrgent) {
+                return lhsIsUrgent && !rhsIsUrgent
+            } else {
+                return lhsDate > rhsDate
+            }
+        }
+    }
+    
+    private func filter(ads: [AdDto]) -> [AdDto] {
+        return ads.filter { adDto in
+            guard let categoryId = adDto.category_id, let adTitle = adDto.title else { return false }
+            return (filters.contains(categoryId) || filters.count == 0) && (adTitle.lowercased() .contains(searchFilter.lowercased()) || searchFilter.isEmpty)
+        }
+    }
+    
+    private func applyFilter() {
+        let filteredAds = self.filter( ads: self.ads)
+        self.output.present(categories: self.categories, ads: filteredAds, filters: self.filters)
+    }
+    
+    private func manageError(error: Error) {
+        if let err = error as? NetworkError {
+            switch err {
+                case .dataTaskError,
+                     .badLocalUrl,
+                     .noData:
+                    output.present(error: err)
+                default:
+                    break
+                }
+        }
+        #if DEBUG
+            print(error)
+        #endif
+    }
 }
 
 extension AdListInteractor: AdListInteractorProtocol {
-    
+ 
     func loadCategoriesAndAds() {
         let serviceGroup = DispatchGroup()
-        var tmpAds = [AdDto]()
-        var tmpCats = [CategoryDto]()
         
         serviceGroup.enter()
         
-        AppDependencies.shared.networkRepository.loadCategories { (result: Result<[CategoryDto], Error>) in
-            switch result {
-            case .success(let categories):
-                tmpCats = categories
-            case .failure(let error):
-                #if DEBUG
-                    print(error)
-                #endif
+        AppDependencies.shared.networkRepository.loadCategories { [weak self] (result: Result<[CategoryDto], Error>) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let categories):
+                    self?.categories = categories
+                case .failure(let error):
+                    self?.manageError(error: error)
+                }
+                serviceGroup.leave()
             }
-            serviceGroup.leave()
         }
         
         serviceGroup.enter()
         
-        AppDependencies.shared.networkRepository.loadAds { (result: Result<[AdDto], Error>) in
-            switch result {
-            case .success(let ads):
-                tmpAds = ads
-            case .failure(let error):
-                #if DEBUG
-                    print(error)
-                #endif
+        AppDependencies.shared.networkRepository.loadAds { [unowned self] (result: Result<[AdDto], Error>) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let ads):
+                    self.ads = self.sortByUrgenceAndDate(ads: ads)
+                case .failure(let error):
+                    self.manageError(error: error)
+                }
+                serviceGroup.leave()
             }
-            serviceGroup.leave()
         }
         
-        serviceGroup.notify(queue: DispatchQueue.main) { [weak self] in
-            self?.output.present(categories: tmpCats, ads: tmpAds)
+        serviceGroup.notify(queue: DispatchQueue.main) { [unowned self] in
+            applyFilter()
         }
-        
     }
     
     func downloadSmallImage(for url: URL?, forCell: AdCell) {
@@ -67,5 +109,31 @@ extension AdListInteractor: AdListInteractorProtocol {
                 }
             }
         }
+    }
+    
+    func getDto(for model: AdListModel) {
+        guard let adDto = ads.first(where: { dto in return dto.id == model.id }), let category = categories.first(where: { category in return category.id == model.category.id }), let categoryName = category.name else {
+            return
+        }
+        output.present(dto: adDto, withCategory: categoryName)
+    }
+    
+    func select(filter id: Int) {
+        if filters.contains(id) {
+            filters.removeAll{ filterId in filterId == id }
+        } else {
+            filters.append(id)
+        }
+        applyFilter()
+    }
+    
+    func clearFilter() {
+        filters.removeAll()
+        applyFilter()
+    }
+    
+    func search(for query: String?) {
+        searchFilter = query ?? ""
+        applyFilter()
     }
 }
