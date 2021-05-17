@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  leminicoin
+
+  Created by Pierre Semler on 17/05/2021.
+  
+*/
+"adList.navigationItem.title"="Pending ads";
+"adList.filter.title"="Filtered by: ";
+"adList.filter.reset.button.title"="Reset";
+"adList.searchBar.placeholder"="What do you look for?";
+
+"error.generic.title"="Wooops";
+"error.generic.message"="Somethind bad happened. Verify your network and try to refresh the app.";
+
+"pullToRefresh.message"= "Pull to refresh";

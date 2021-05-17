@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  leminicoin
+
+  Created by Pierre Semler on 17/05/2021.
+  
+*/
+"adList.navigationItem.title"="Annonces en cours";
+"adList.filter.title"="Filtrer par : ";
+"adList.filter.reset.button.title"="Réinitialiser";
+"adList.searchBar.placeholder"="Que recherchez-vous?";
+
+"error.generic.title"="Oups";
+"error.generic.message"="Quelque chose s'est mal passé. Vérifiez votre connexion réseau et essayer de rafraîhcir l'application.";
+
+"pullToRefresh.message"= "Tirez pour rafraîchir";
