@@ -15,7 +15,7 @@ final class Loader {
     
     func show(){
         let containerView = UIView(frame: .zero)
-        containerView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        containerView.backgroundColor = AppColor.primaryColor.color
         containerView.restorationIdentifier = restorationIdentifier
         
         let spinner = UIActivityIndicatorView(style: .whiteLarge)
