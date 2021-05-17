@@ -9,5 +9,5 @@ The application is querying ads and displaying them on a list. All results are s
 # Localization
 The app is available in english and french.
 
-![Alt text](https://github.com/Akenhor/leminicoin/screenShot_1.png?raw=true "App Ad List Screenshot")
-![Alt text](https://github.com/Akenhor/leminicoin/screenShot_2.png?raw=true "App Ad Detail Screenshot")
+![Alt text](https://github.com/Akenhor/leminicoin/blob/master/screenShot_1.png?raw=true "App Ad List Screenshot")
+![Alt text](https://github.com/Akenhor/leminicoin/blob/master/screenShot_2.png?raw=true "App Ad Detail Screenshot")
