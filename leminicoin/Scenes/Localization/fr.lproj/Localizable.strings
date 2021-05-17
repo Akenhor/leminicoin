@@ -5,12 +5,17 @@
   Created by Pierre Semler on 17/05/2021.
   
 */
+
+"ok.title" = "OK";
+
 "adList.navigationItem.title"="Annonces en cours";
 "adList.filter.title"="Filtrer par : ";
 "adList.filter.reset.button.title"="Réinitialiser";
 "adList.searchBar.placeholder"="Que recherchez-vous?";
 
 "error.generic.title"="Oups";
-"error.generic.message"="Quelque chose s'est mal passé. Vérifiez votre connexion réseau et essayer de rafraîhcir l'application.";
+"error.dataTask.message"="Un soucis s'est produit: vérifiez votre connexion réseau et essayer de rafraîchir l'application.";
+"error.badResponse.message"="Un soucis s'est produit: le serveur a renvoyé une erreur";
+"error.noData.message"="Un soucis s'est produit: aucune donnée reçue.";
 
 "pullToRefresh.message"= "Tirez pour rafraîchir";

@@ -9,6 +9,11 @@ import Foundation
 
 public enum L10n {
     
+    public enum Ok {
+        
+        public static let title = L10n.getLocalizedString(table: "Localizable", key: "ok.title")
+    }
+    
     public enum AdList {
         
         public enum NavigationItem {
@@ -37,7 +42,18 @@ public enum L10n {
     public enum Error {
         public enum Generic {
             public static let title = L10n.getLocalizedString(table: "Localizable", key: "error.generic.title")
-            public static let message = L10n.getLocalizedString(table: "Localizable", key: "error.generic.message")
+        }
+        
+        public enum DataTask {
+            public static let message = L10n.getLocalizedString(table: "Localizable", key: "error.dataTask.message")
+        }
+        
+        public enum BadResponse {
+            public static let message = L10n.getLocalizedString(table: "Localizable", key: "error.badResponse.message")
+        }
+        
+        public enum NoData {
+            public static let message = L10n.getLocalizedString(table: "Localizable", key: "error.noData.message")
         }
     }
     
