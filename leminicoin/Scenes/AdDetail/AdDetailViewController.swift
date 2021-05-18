@@ -30,12 +30,6 @@ final class AdDetailViewController: UIViewController {
         }
     }
     
-    var convertedDate: String? {
-        didSet{
-            dateLabel.text = convertedDate
-        }
-    }
-    
     fileprivate lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         
@@ -161,10 +155,6 @@ final class AdDetailViewController: UIViewController {
 extension AdDetailViewController: AdDetailViewControllerProtocol {
     func display(ad: AdDetailModel) {
         self.ad = ad
-    }
-    
-    func display(date: String) {
-        self.convertedDate = date
     }
     
     func display(thumbImage: UIImage) {

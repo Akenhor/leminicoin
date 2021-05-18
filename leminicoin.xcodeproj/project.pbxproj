@@ -24,6 +24,9 @@
 		A7756F0926532F3500BC4F82 /* TestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F0826532F3500BC4F82 /* TestingHelper.swift */; };
 		A7756F672653BCFE00BC4F82 /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F662653BCFE00BC4F82 /* NetworkServiceSpy.swift */; };
 		A7756F6C2654424A00BC4F82 /* AdListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F6B2654424A00BC4F82 /* AdListPresenterTests.swift */; };
+		A7756F7B2654577200BC4F82 /* AdDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F7A2654577200BC4F82 /* AdDetailViewControllerTests.swift */; };
+		A7756F832654578500BC4F82 /* AdDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F822654578500BC4F82 /* AdDetailInteractorTests.swift */; };
+		A7756F882654579000BC4F82 /* AdDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F872654579000BC4F82 /* AdDetailPresenterTests.swift */; };
 		A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96664264EB55200DF3625 /* AppDelegate.swift */; };
 		A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96666264EB55200DF3625 /* SceneDelegate.swift */; };
 		A7A9666E264EB55300DF3625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666D264EB55300DF3625 /* Assets.xcassets */; };
@@ -89,6 +92,9 @@
 		A7756F0826532F3500BC4F82 /* TestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingHelper.swift; sourceTree = "<group>"; };
 		A7756F662653BCFE00BC4F82 /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
 		A7756F6B2654424A00BC4F82 /* AdListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListPresenterTests.swift; sourceTree = "<group>"; };
+		A7756F7A2654577200BC4F82 /* AdDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		A7756F822654578500BC4F82 /* AdDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailInteractorTests.swift; sourceTree = "<group>"; };
+		A7756F872654579000BC4F82 /* AdDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailPresenterTests.swift; sourceTree = "<group>"; };
 		A7A96661264EB55200DF3625 /* leminicoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leminicoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A96664264EB55200DF3625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A96666264EB55200DF3625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +202,16 @@
 			path = AdList;
 			sourceTree = "<group>";
 		};
+		A7756F792654575D00BC4F82 /* AdDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A7756F7A2654577200BC4F82 /* AdDetailViewControllerTests.swift */,
+				A7756F822654578500BC4F82 /* AdDetailInteractorTests.swift */,
+				A7756F872654579000BC4F82 /* AdDetailPresenterTests.swift */,
+			);
+			path = AdDetail;
+			sourceTree = "<group>";
+		};
 		A7A96658264EB55100DF3625 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +251,7 @@
 		A7A9667A264EB55300DF3625 /* leminicoinTests */ = {
 			isa = PBXGroup;
 			children = (
+				A7756F792654575D00BC4F82 /* AdDetail */,
 				A7756EF126530AA900BC4F82 /* AdList */,
 				A7A9667D264EB55300DF3625 /* Info.plist */,
 				A7756F662653BCFE00BC4F82 /* NetworkServiceSpy.swift */,
@@ -540,9 +557,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7756F672653BCFE00BC4F82 /* NetworkServiceSpy.swift in Sources */,
+				A7756F7B2654577200BC4F82 /* AdDetailViewControllerTests.swift in Sources */,
+				A7756F832654578500BC4F82 /* AdDetailInteractorTests.swift in Sources */,
 				A7756F6C2654424A00BC4F82 /* AdListPresenterTests.swift in Sources */,
 				A7756F0126531FCC00BC4F82 /* AdListInteractorTests.swift in Sources */,
 				A7756EF326530D9800BC4F82 /* AdListViewControllerTests.swift in Sources */,
+				A7756F882654579000BC4F82 /* AdDetailPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -118,7 +118,9 @@ class AdListViewControllerTests: XCTestCase {
         let ads = [
             AdListModel(id: 1, category: categories[0], title: nil, smallImageUrl: nil, price: "", isUrgentImage: nil),
             AdListModel(id: 2, category: categories[2], title: nil, smallImageUrl: nil, price: "", isUrgentImage: nil)]
+        //When
         sut.display(categories: categories, ads: ads)
+        //Then
         XCTAssert(sut.categories.count > 0)
         XCTAssert(sut.ads.count > 0)
         XCTAssertEqual(sut.categories.count, categories.count)
@@ -126,7 +128,11 @@ class AdListViewControllerTests: XCTestCase {
     }
     
     func testNavigationToDetail() {
-        sut.displayDto(dto: AdDto(id: nil, category_id: nil, title: nil, description: nil, price: nil, images_url: nil, creation_date: nil, is_urgent: nil), withCategory: "Formation")
+        //Given
+        let adDto = AdDto(id: nil, category_id: nil, title: nil, description: nil, price: nil, images_url: nil, creation_date: nil, is_urgent: nil)
+        //When
+        sut.displayDto(dto: adDto, withCategory: "Formation")
+        //Then
         XCTAssert(router.navigateToDetailWasCalled)
     }
     

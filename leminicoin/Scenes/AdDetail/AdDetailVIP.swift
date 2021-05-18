@@ -11,7 +11,6 @@ import UIKit
 protocol AdDetailViewControllerProtocol: class {
     func display(ad: AdDetailModel)
     func display(thumbImage: UIImage)
-    func display(date: String)
 }
 
 protocol AdDetailInteractorProtocol {

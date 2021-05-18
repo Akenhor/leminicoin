@@ -52,7 +52,6 @@ class AdListInteractorTests: XCTestCase {
         wait(for: [output.expectation], timeout: 10)
     }
     
-    
     func testPresentCatAdsFiltersWhenRequestCompleted() {
         //Given
         //When
@@ -91,7 +90,7 @@ class AdListInteractorTests: XCTestCase {
     func testPresentNilSmallImageDataWhenDownloadError() {
         //Given
         //When
-        downloadMockData(url: URL(fileURLWithPath: "genericError"), cellId: 1)
+        downloadMockData(url: URL(fileURLWithPath: "downloadError"), cellId: 1)
         //Then
         XCTAssert(output.presentSmallImageDataWasCalled)
         XCTAssertNil(output.smallImage)
@@ -292,9 +291,7 @@ class AdListInteractorTests: XCTestCase {
     }
     
     class NetworkRepositorySpy: NetworkRepository {
-        
-        public var mustFailed = false
-        
+    
         override var networkService: NetworkService {
             return NetworkServiceSpy(with: URLComponents())
         }
@@ -305,7 +302,7 @@ class AdListInteractorTests: XCTestCase {
         }
         
         override func loadCategories(completion: @escaping (Result<[CategoryDto], NetworkError>) -> Void) {
-            let url = mustFailed ? URL(fileURLWithPath: "genericError") : URL(fileURLWithPath: "loadCat")
+            let url = URL(fileURLWithPath: "loadCat")
             networkService.request(urlRequest: URLRequest(url: url), completion: completion)
         }
         override func downloadAdImage(at url: URL?, completion: @escaping (Result<Data?, NetworkError>) -> Void) {

@@ -30,13 +30,13 @@ class AdListPresenterTests: XCTestCase {
     
     func testDisplayImageWithData() {
         //Given
-        let data = #imageLiteral(resourceName: "AdIsUrgent").pngData()
+        let data = #imageLiteral(resourceName: "AppLogo").pngData()
         let adCell = AdCell()
         //When
         sut.present(smallImageData: data, forCell: adCell)
         //Then
         XCTAssert(output.displayImageWasCalled)
-        XCTAssertNotEqual(output.smallImage.pngData(), #imageLiteral(resourceName: "ImagePlaceholder").pngData())
+        XCTAssertEqual(output.smallImage.pngData(), #imageLiteral(resourceName: "AppLogo").pngData())
     }
     
     func testDisplayImageWithNilData() {

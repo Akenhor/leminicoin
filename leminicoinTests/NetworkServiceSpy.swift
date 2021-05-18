@@ -38,7 +38,7 @@ class NetworkServiceSpy: NetworkService {
     
     override func download(urlRequest: URLRequest, completion: @escaping (Result<Data?, NetworkError>) -> Void) {
         if urlRequest.url?.path == "/downloadImage" {
-            completion(.success(UIImage(named: "ImagePlaceholder")?.pngData()))
+            completion(.success(Data()))
         } else {
             completion(.failure(NetworkError.badLocalUrl))
         }

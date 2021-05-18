@@ -9,6 +9,7 @@ import Foundation
 
 final class AdDetailInteractor {
     var output: AdDetailPresenterProtocol!
+    var appDependency: AppDependencies!
     private var ad: AdDto?
     private var category: String?
     
@@ -17,7 +18,8 @@ final class AdDetailInteractor {
             output.present(thumbImageData: nil)
             return
         }
-        AppDependencies.shared.networkRepository.downloadAdImage(at: url) { [weak self] (result: (Result<Data?, NetworkError>)) in
+        
+        appDependency.networkRepository.downloadAdImage(at: url) { [weak self] (result: (Result<Data?, NetworkError>)) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let data):

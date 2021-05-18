@@ -16,6 +16,7 @@ enum AdDetailConfigurator {
         
         let interactor = AdDetailInteractor()
         interactor.output = presenter
+        interactor.appDependency = AppDependencies.shared
         
         viewController.output = interactor
     }
