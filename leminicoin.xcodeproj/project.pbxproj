@@ -20,11 +20,14 @@
 		A7756ED826528D6F00BC4F82 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7756EDA26528D6F00BC4F82 /* Localizable.strings */; };
 		A7756EE3265290D000BC4F82 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EE2265290D000BC4F82 /* L10n.swift */; };
 		A7756EF326530D9800BC4F82 /* AdListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756EF226530D9800BC4F82 /* AdListViewControllerTests.swift */; };
+		A7756F0126531FCC00BC4F82 /* AdListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F0026531FCB00BC4F82 /* AdListInteractorTests.swift */; };
+		A7756F0926532F3500BC4F82 /* TestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F0826532F3500BC4F82 /* TestingHelper.swift */; };
+		A7756F672653BCFE00BC4F82 /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F662653BCFE00BC4F82 /* NetworkServiceSpy.swift */; };
+		A7756F6C2654424A00BC4F82 /* AdListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7756F6B2654424A00BC4F82 /* AdListPresenterTests.swift */; };
 		A7A96665264EB55200DF3625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96664264EB55200DF3625 /* AppDelegate.swift */; };
 		A7A96667264EB55200DF3625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96666264EB55200DF3625 /* SceneDelegate.swift */; };
 		A7A9666E264EB55300DF3625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666D264EB55300DF3625 /* Assets.xcassets */; };
 		A7A96671264EB55300DF3625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A9666F264EB55300DF3625 /* LaunchScreen.storyboard */; };
-		A7A9667C264EB55300DF3625 /* leminicoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9667B264EB55300DF3625 /* leminicoinTests.swift */; };
 		A7A96687264EB55300DF3625 /* leminicoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A96686264EB55300DF3625 /* leminicoinUITests.swift */; };
 		A7A966B2264EB8EA00DF3625 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966B1264EB8EA00DF3625 /* NetworkService.swift */; };
 		A7A966B7264EBF3700DF3625 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966B6264EBF3700DF3625 /* NetworkRepository.swift */; };
@@ -82,6 +85,10 @@
 		A7756EDE26528D8100BC4F82 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A7756EE2265290D000BC4F82 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		A7756EF226530D9800BC4F82 /* AdListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListViewControllerTests.swift; sourceTree = "<group>"; };
+		A7756F0026531FCB00BC4F82 /* AdListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListInteractorTests.swift; sourceTree = "<group>"; };
+		A7756F0826532F3500BC4F82 /* TestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingHelper.swift; sourceTree = "<group>"; };
+		A7756F662653BCFE00BC4F82 /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
+		A7756F6B2654424A00BC4F82 /* AdListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListPresenterTests.swift; sourceTree = "<group>"; };
 		A7A96661264EB55200DF3625 /* leminicoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leminicoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A96664264EB55200DF3625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A96666264EB55200DF3625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +96,6 @@
 		A7A96670264EB55300DF3625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7A96672264EB55300DF3625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A96677264EB55300DF3625 /* leminicoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leminicoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7A9667B264EB55300DF3625 /* leminicoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leminicoinTests.swift; sourceTree = "<group>"; };
 		A7A9667D264EB55300DF3625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A96682264EB55300DF3625 /* leminicoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leminicoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A96686264EB55300DF3625 /* leminicoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leminicoinUITests.swift; sourceTree = "<group>"; };
@@ -184,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				A7756EF226530D9800BC4F82 /* AdListViewControllerTests.swift */,
+				A7756F0026531FCB00BC4F82 /* AdListInteractorTests.swift */,
+				A7756F6B2654424A00BC4F82 /* AdListPresenterTests.swift */,
 			);
 			path = AdList;
 			sourceTree = "<group>";
@@ -228,8 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				A7756EF126530AA900BC4F82 /* AdList */,
-				A7A9667B264EB55300DF3625 /* leminicoinTests.swift */,
 				A7A9667D264EB55300DF3625 /* Info.plist */,
+				A7756F662653BCFE00BC4F82 /* NetworkServiceSpy.swift */,
 			);
 			path = leminicoinTests;
 			sourceTree = "<group>";
@@ -352,6 +360,7 @@
 			children = (
 				A7A9675E26511AB200DF3625 /* ConfigurationManager.swift */,
 				A7756E7B26511F5800BC4F82 /* ServicesServerConfiguration.swift */,
+				A7756F0826532F3500BC4F82 /* TestingHelper.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -499,6 +508,7 @@
 				A7A966D0264ECEFB00DF3625 /* AdImageDto.swift in Sources */,
 				A7A96700265027E400DF3625 /* AdListVIP.swift in Sources */,
 				A7756EC42652732F00BC4F82 /* AppColor.swift in Sources */,
+				A7756F0926532F3500BC4F82 /* TestingHelper.swift in Sources */,
 				A7A966DE264FD39100DF3625 /* AdCell.swift in Sources */,
 				A7A966F22650265900DF3625 /* AdListInteractor.swift in Sources */,
 				A7756EA12651249500BC4F82 /* AdDetailPresenter.swift in Sources */,
@@ -529,7 +539,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A9667C264EB55300DF3625 /* leminicoinTests.swift in Sources */,
+				A7756F672653BCFE00BC4F82 /* NetworkServiceSpy.swift in Sources */,
+				A7756F6C2654424A00BC4F82 /* AdListPresenterTests.swift in Sources */,
+				A7756F0126531FCC00BC4F82 /* AdListInteractorTests.swift in Sources */,
 				A7756EF326530D9800BC4F82 /* AdListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

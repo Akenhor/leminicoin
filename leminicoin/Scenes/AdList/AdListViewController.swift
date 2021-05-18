@@ -94,6 +94,7 @@ final class AdListViewController: UITableViewController {
         view.backgroundColor = .white
         tableView.register(AdCell.self, forCellReuseIdentifier: AdCell.reuseIdentifier)
         tableView.separatorInset = .zero
+        tableView.tableFooterView = UIView()
         tableView.refreshControl = pullRefresh
         self.navigationItem.title = L10n.AdList.NavigationItem.title
         self.navigationItem.searchController = searchBarController
@@ -125,15 +126,18 @@ final class AdListViewController: UITableViewController {
         cell.isUrgentImage = ad.isUrgentImage
         
         cell.smallImage = nil
+        
+        let representedId = ad.id
+        cell.representedIdentifier = ad.id
 
-        output.downloadSmallImage(for: ad.smallImageUrl, forCell: cell)
+        output.downloadSmallImage(for: ad.smallImageUrl, forCell: cell, id: representedId)
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let ad = ads[indexPath.row]
-        self.output.getDto(for: ad)
+        self.output.getDto(for: ad.id, categoryId: ad.category.id)
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

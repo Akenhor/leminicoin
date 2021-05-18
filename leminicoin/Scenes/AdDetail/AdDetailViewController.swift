@@ -98,7 +98,7 @@ final class AdDetailViewController: UIViewController {
         label.textAlignment = .left
         
         contentView.addSubview(label)
-        label.anchor(top: thumbImageView.bottomAnchor, left: thumbImageView.leftAnchor, right: nil, bottom: nil, paddingTop: defaultPadding, paddingLeft: defaultPadding, width: 2 * view.bounds.width / 3)
+        label.anchor(top: thumbImageView.bottomAnchor, left: thumbImageView.leftAnchor, right: nil, bottom: nil, paddingTop: defaultPadding, paddingLeft: defaultPadding, width: view.bounds.width / 2)
         
         return label
     }()

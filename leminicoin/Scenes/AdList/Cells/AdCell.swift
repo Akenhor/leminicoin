@@ -11,6 +11,7 @@ final class AdCell: UITableViewCell {
     
     static let reuseIdentifier: String = "\(AdCell.self)"
     private let defaultPadding: CGFloat = 10
+    var representedIdentifier: Int64 = 0
     
     var smallImage: UIImage? {
         didSet {
@@ -102,7 +103,7 @@ final class AdCell: UITableViewCell {
         label.textAlignment = .left
         
         contentView.addSubview(label)
-        label.anchor(top: categoryLabel.bottomAnchor, left: categoryLabel.leftAnchor, right: nil, bottom: contentView.bottomAnchor, paddingTop: defaultPadding, paddingBottom: defaultPadding, width: 2 * contentView.bounds.width / 3)
+        label.anchor(top: categoryLabel.bottomAnchor, left: categoryLabel.leftAnchor, right: nil, bottom: contentView.bottomAnchor, paddingTop: defaultPadding, paddingBottom: defaultPadding, width: contentView.bounds.width / 2)
         
         return label
     }()

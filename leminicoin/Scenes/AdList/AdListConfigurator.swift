@@ -18,6 +18,7 @@ enum AdListConfigurator {
         
         let interactor = AdListInteractor()
         interactor.output = presenter
+        interactor.appDependency = AppDependencies.shared
         
         viewController.output = interactor
         viewController.router = router

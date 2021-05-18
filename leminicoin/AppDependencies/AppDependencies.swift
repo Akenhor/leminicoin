@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class AppDependencies {
+class AppDependencies {
     
     static let shared = AppDependencies()
     

@@ -16,8 +16,8 @@ protocol AdListViewControllerProtocol: class {
 
 protocol AdListInteractorProtocol {
     func loadCategoriesAndAds()
-    func getDto(for model: AdListModel)
-    func downloadSmallImage(for url: URL?, forCell: AdCell)
+    func getDto(for modelId: Int64, categoryId: Int)
+    func downloadSmallImage(for url: URL?, forCell: AdCell, id: Int64)
     func select(filter id: Int)
     func search(for query: String?)
     func clearFilter()
