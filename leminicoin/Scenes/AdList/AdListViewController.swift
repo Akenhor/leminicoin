@@ -69,11 +69,15 @@ final class AdListViewController: UITableViewController {
     fileprivate lazy var searchBarController: UISearchController = {
         let searchBarController = UISearchController(searchResultsController: nil)
         searchBarController.searchResultsUpdater = self
+        definesPresentationContext = true
         
         if #available(iOS 13.0, *) {
             searchBarController.searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: L10n.AdList.SearchBar.placeholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         } else {
             searchBarController.searchBar.placeholder = L10n.AdList.SearchBar.placeholder
+            searchBarController.searchBar.tintColor = .white
+            let cancelButtonAppearance = UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self])
+            cancelButtonAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
         }
         searchBarController.obscuresBackgroundDuringPresentation = false
         return searchBarController
